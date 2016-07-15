@@ -4,7 +4,7 @@
 try {
 	$conn = new PDO ("sqlsrv:server = tcp:drjtest-helix-sql1.database.windows.net,1433; Database = drjtest-helix-nc-sql", "danjohn1234", "#EDC4rfv");
 	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-	echo "Connected successfully via PDO."
+	echo "Connected successfully via PDO.";
 }
 
 catch ( PDOException $e ) {
